@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Auto-check-out</name>
+        <run_as display_value="Chuck Tomasi">ac3196ebdbd576009093b3d0ef961973</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-03-22 22:56:44</run_start>
+        <run_time>1970-01-01 07:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[(function (){
+	var expireTime = new GlideDateTime();
+
+	var expire = parseInt(gs.getProperty('x_snc_tour.max_check_in'), 10);
+	var gt = new GlideTime();
+	gt.setValue(expire + ':00:00');
+	expireTime.subtract(gt);
+
+	var checkIn = new GlideRecord('x_snc_tour_m2m_check_in');
+	checkIn.addQuery('status', 'In');
+	checkIn.addQuery('check_in_time', '<', expireTime);
+	checkIn.query();
+	
+	while (checkIn.next()) {
+		gs.info(checkIn.user.getDisplayValue() + ' ' + checkIn.check_in_time.getDisplayValue());
+		checkIn.status = 'Out';
+		checkIn.update();
+	}	
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2017-03-22 23:17:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>be37d5a3dbe97e409093b3d0ef9619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto-check-out</sys_name>
+        <sys_package display_value="Tour" source="x_snc_tour">0cbf730fdb2dba409093b3d0ef96190e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tour">0cbf730fdb2dba409093b3d0ef96190e</sys_scope>
+        <sys_update_name>sysauto_script_be37d5a3dbe97e409093b3d0ef9619f4</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2017-03-22 23:17:23</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="rating" table="x_snc_tour_site" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rating</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>⭐️</label>
+            <language>en</language>
+            <name>x_snc_tour_site</name>
+            <sequence/>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-03-21 22:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7c24057db6dba409093b3d0ef961995</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-03-21 22:10:52</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rating</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>⭐️⭐️</label>
+            <language>en</language>
+            <name>x_snc_tour_site</name>
+            <sequence/>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-03-21 22:10:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78230057db6dba409093b3d0ef9619fc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-03-21 22:11:01</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rating</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>⭐️⭐️⭐️</label>
+            <language>en</language>
+            <name>x_snc_tour_site</name>
+            <sequence/>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-03-21 22:11:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3623cc57db6dba409093b3d0ef9619d8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-03-21 22:11:09</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rating</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>⭐️⭐️⭐️⭐️</label>
+            <language>en</language>
+            <name>x_snc_tour_site</name>
+            <sequence/>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-03-21 22:11:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54330097db6dba409093b3d0ef96192e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-03-21 22:11:17</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rating</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>⭐️⭐️⭐️⭐️⭐️</label>
+            <language>en</language>
+            <name>x_snc_tour_site</name>
+            <sequence/>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-03-21 22:11:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>62334057db6dba409093b3d0ef96199c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-03-21 22:11:23</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>rating</element>
+            <name>x_snc_tour_site</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-03-21 22:10:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>30234057db6dba409093b3d0ef9619ee</sys_id>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_name>rating</sys_name>
+            <sys_package display_value="Tour" source="x_snc_tour">0cbf730fdb2dba409093b3d0ef96190e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Tour">0cbf730fdb2dba409093b3d0ef96190e</sys_scope>
+            <sys_update_name>sys_choice_x_snc_tour_site_rating</sys_update_name>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-03-21 22:11:23</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="hasLabels=true" label="Site" max_length="40" name="x_snc_tour_site" type="collection">
+        <element label="Checked in" max_length="40" name="checked_in" type="integer"/>
+        <element label="Cost" max_length="20" name="cost" type="currency"/>
+        <element label="Hours" max_length="32" name="hours" reference="cmn_schedule" type="reference"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element display="true" label="Name" max_length="80" name="name" type="string"/>
+        <element label="Phone" max_length="40" name="phone" type="phone_number_e164"/>
+        <element label="Photo" max_length="40" name="photo" type="user_image"/>
+        <element choice="1" label="Rating" max_length="40" name="rating" type="choice">
+            <choice>
+                <element label="⭐️" value="1"/>
+                <element label="⭐️⭐️" value="2"/>
+                <element label="⭐️⭐️⭐️" value="3"/>
+                <element label="⭐️⭐️⭐️⭐️" value="4"/>
+                <element label="⭐️⭐️⭐️⭐️⭐️" value="5"/>
+            </choice>
+        </element>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Aquarium" sequence="0" value="Aquarium"/>
+                <element label="Museum" sequence="1" value="Museum"/>
+                <element label="Restaurant" sequence="2" value="Restaurant"/>
+                <element label="Historical Monument" sequence="3" value="Historical Monument"/>
+                <element label="Sports Arena" sequence="4" value="Sports Arena"/>
+                <element label="Scenic" sequence="5" value="Scenic"/>
+                <element label="Planetarium" sequence="6" value="Planetarium"/>
+            </choice>
+        </element>
+        <element label="Wait time (minutes)" max_length="40" name="wait_time" type="integer"/>
+        <element label="Website" max_length="1024" name="website" type="url"/>
+        <index name="index">
+            <element name="hours"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+    </element>
+</database>
